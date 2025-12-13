@@ -2,7 +2,7 @@
 version: "1.0"
 
 # 课程基本信息
-slug: cs50
+slug: course-cs50
 name: "CS50: Introduction to Computer Science"
 description: README.md
 summary: |
