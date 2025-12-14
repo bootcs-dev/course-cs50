@@ -1,4 +1,4 @@
 bootcs:
   files:
     - !exclude "*"
-    - !require "*.c"
+    - !require cash.c
