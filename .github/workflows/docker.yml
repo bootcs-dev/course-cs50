@@ -52,10 +52,10 @@ jobs:
     steps:
       - name: Test CS50 image
         run: |
-          # 测试镜像
+          # 测试镜像版本
           docker run --rm ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:cs50 --version
           
-          # 测试检查脚本存在
-          docker run --rm ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:cs50 sh -c "ls /checks/"
+          # 测试检查脚本存在（使用 --entrypoint 覆盖）
+          docker run --rm --entrypoint ls ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:cs50 /checks/
           
           echo "CS50 image test passed!"
