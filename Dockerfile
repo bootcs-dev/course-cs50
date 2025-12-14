@@ -1,5 +1,6 @@
 # bootcs-cli CS50 Course Image
 # 包含 CS50 课程的检查脚本和 libcs50 库
+# Updated: 2025-12-14
 
 FROM ghcr.io/bootcs-cn/bootcs-cli:latest
 
