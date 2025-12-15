@@ -23,11 +23,7 @@ evaluation:
 
 # 访问控制
 access:
-  type: freemium  # free | freemium | subscription
-  free_stages:
-    - hello
-    - mario-less
-    - me
+  type: free  # free | freemium | subscription
 
 # 标签
 tags:
