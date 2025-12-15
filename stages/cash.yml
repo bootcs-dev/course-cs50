@@ -8,24 +8,23 @@ summary: |
   实现贪心算法，计算找零所需的最少硬币数量。
 
 category: week-1
-language: c
+
+languages:
+  c:
+    starter_path: starters/c/cash
+    check_path: checks/c/cash
+    files:
+      required:
+        - cash.c
+      allowed:
+        - "*.c"
+        - "*.h"
+      blocked:
+        - "*.o"
+        - "*.exe"
 
 evaluation:
   timeout: 60
-  check_path: checks/cash
-
-starter:
-  path: starters/cash
-
-files:
-  required:
-    - cash.c
-  allowed:
-    - "*.c"
-    - "*.h"
-  blocked:
-    - "*.o"
-    - "*.exe"
 
 hints:
   - "使用贪心算法：优先使用大面值硬币"

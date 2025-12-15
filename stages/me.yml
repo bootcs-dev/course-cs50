@@ -8,24 +8,23 @@ summary: |
   实现一个程序，接收用户输入的名字并输出问候语。
 
 category: week-1
-language: c
+
+languages:
+  c:
+    starter_path: starters/c/me
+    check_path: checks/c/me
+    files:
+      required:
+        - hello.c
+      allowed:
+        - "*.c"
+        - "*.h"
+      blocked:
+        - "*.o"
+        - "*.exe"
 
 evaluation:
   timeout: 60
-  check_path: checks/me
-
-starter:
-  path: starters/me
-
-files:
-  required:
-    - hello.c
-  allowed:
-    - "*.c"
-    - "*.h"
-  blocked:
-    - "*.o"
-    - "*.exe"
 
 hints:
   - "使用 get_string 获取用户输入的名字"

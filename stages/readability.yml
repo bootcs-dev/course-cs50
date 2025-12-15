@@ -8,23 +8,22 @@ summary: |
   实现一个程序来计算文本的可读性等级。
 
 category: week-2
-language: c
+
+languages:
+  c:
+    starter_path: starters/c/readability
+    check_path: checks/c/readability
+    files:
+      required:
+        - readability.c
+      allowed:
+        - "*.c"
+        - "*.h"
+      blocked:
+        - "*.o"
+        - "*.exe"
 
 evaluation:
   timeout: 60
-  check_path: checks/readability
-
-starter:
-  path: starters/readability
-
-files:
-  required:
-    - readability.c
-  allowed:
-    - "*.c"
-    - "*.h"
-  blocked:
-    - "*.o"
-    - "*.exe"
 
 hints:

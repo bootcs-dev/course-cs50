@@ -1,4 +1,0 @@
-bootcs:
-  files:
-    - !exclude "*"
-    - !require readability.c

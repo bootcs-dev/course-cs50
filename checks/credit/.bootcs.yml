@@ -1,4 +1,0 @@
-bootcs:
-  files:
-    - !exclude "*"
-    - !require credit.c

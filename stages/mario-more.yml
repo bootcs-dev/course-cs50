@@ -8,24 +8,23 @@ summary: |
   实现双侧金字塔版本的 Mario 程序。
 
 category: week-1
-language: c
+
+languages:
+  c:
+    starter_path: starters/c/mario-more
+    check_path: checks/c/mario-more
+    files:
+      required:
+        - mario.c
+      allowed:
+        - "*.c"
+        - "*.h"
+      blocked:
+        - "*.o"
+        - "*.exe"
 
 evaluation:
   timeout: 60
-  check_path: checks/mario-more
-
-starter:
-  path: starters/mario-more
-
-files:
-  required:
-    - mario.c
-  allowed:
-    - "*.c"
-    - "*.h"
-  blocked:
-    - "*.o"
-    - "*.exe"
 
 hints:
   - "两个金字塔之间有两个空格"

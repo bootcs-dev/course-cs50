@@ -7,25 +7,25 @@ description: hello.md
 summary: |
   实现一个程序，向用户打招呼。
 
-category: week-1
-language: c
+category: Week 1
 
+# 多语言配置
+languages:
+  c:
+    starter: starters/c/hello
+    files:
+      required:
+        - hello.c
+      allowed:
+        - "*.c"
+        - "*.h"
+      blocked:
+        - "*.o"
+        - "*.exe"
+
+# 评测配置
 evaluation:
   timeout: 60
-  check_path: checks/hello
-
-starter:
-  path: starters/hello
-
-files:
-  required:
-    - hello.c
-  allowed:
-    - "*.c"
-    - "*.h"
-  blocked:
-    - "*.o"
-    - "*.exe"
 
 hints:
   - "记得包含 <stdio.h> 和 <cs50.h>"

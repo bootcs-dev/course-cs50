@@ -12,10 +12,22 @@ icon: https://cdn.bootcs.cn/icons/cs50.svg
 difficulty: medium
 status: beta
 
+# 支持的语言（有序，第一个是推荐语言）
+languages:
+  - c
+  # - python  # 未来扩展
+
 # 评测配置
 evaluation:
-  image: ghcr.io/bootcs-cn/bootcs-cli:cs50
   timeout: 120
+
+# 访问控制
+access:
+  type: freemium  # free | freemium | subscription
+  free_stages:
+    - hello
+    - mario-less
+    - me
 
 # 标签
 tags:

@@ -8,23 +8,22 @@ summary: |
   实现一个程序来判断 Scrabble 游戏中哪位玩家获胜。
 
 category: week-2
-language: c
+
+languages:
+  c:
+    starter_path: starters/c/scrabble
+    check_path: checks/c/scrabble
+    files:
+      required:
+        - scrabble.c
+      allowed:
+        - "*.c"
+        - "*.h"
+      blocked:
+        - "*.o"
+        - "*.exe"
 
 evaluation:
   timeout: 60
-  check_path: checks/scrabble
-
-starter:
-  path: starters/scrabble
-
-files:
-  required:
-    - scrabble.c
-  allowed:
-    - "*.c"
-    - "*.h"
-  blocked:
-    - "*.o"
-    - "*.exe"
 
 hints:

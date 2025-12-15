@@ -8,24 +8,23 @@ summary: |
   实现信用卡号验证程序，使用 Luhn 算法。
 
 category: week-1
-language: c
+
+languages:
+  c:
+    starter_path: starters/c/credit
+    check_path: checks/c/credit
+    files:
+      required:
+        - credit.c
+      allowed:
+        - "*.c"
+        - "*.h"
+      blocked:
+        - "*.o"
+        - "*.exe"
 
 evaluation:
   timeout: 60
-  check_path: checks/credit
-
-starter:
-  path: starters/credit
-
-files:
-  required:
-    - credit.c
-  allowed:
-    - "*.c"
-    - "*.h"
-  blocked:
-    - "*.o"
-    - "*.exe"
 
 hints:
   - "使用 get_long 获取卡号"

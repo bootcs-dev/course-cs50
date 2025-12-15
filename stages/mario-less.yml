@@ -8,24 +8,23 @@ summary: |
   使用 # 打印半个金字塔，练习循环和条件语句。
 
 category: week-1
-language: c
+
+languages:
+  c:
+    starter_path: starters/c/mario-less
+    check_path: checks/c/mario-less
+    files:
+      required:
+        - mario.c
+      allowed:
+        - "*.c"
+        - "*.h"
+      blocked:
+        - "*.o"
+        - "*.exe"
 
 evaluation:
   timeout: 60
-  check_path: checks/mario-less
-
-starter:
-  path: starters/mario-less
-
-files:
-  required:
-    - mario.c
-  allowed:
-    - "*.c"
-    - "*.h"
-  blocked:
-    - "*.o"
-    - "*.exe"
 
 hints:
   - "使用嵌套循环：外层控制行数，内层控制列数"
