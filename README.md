@@ -28,7 +28,7 @@ CS50 是哈佛大学的计算机科学入门课程，由 David J. Malan 教授�
 **macOS / Linux：**
 
 ```bash
-curl -fsSL https://bootcs.cn/install.sh | bash
+curl -fsSL https://bootcs.dev/install.sh | bash
 ```
 
 安装后直接使用：
@@ -40,7 +40,7 @@ bootcs check cs50/credit
 ### 方式二：直接使用 Docker
 
 ```bash
-docker run --rm -v $(pwd):/workspace ghcr.io/bootcs-cn/bootcs-cli:cs50 check cs50/<stage>
+docker run --rm -v $(pwd):/workspace ghcr.io/bootcs-dev/bootcs-cli:cs50 check cs50/<stage>
 ```
 
 ### 方式三：设置别名
@@ -48,7 +48,7 @@ docker run --rm -v $(pwd):/workspace ghcr.io/bootcs-cn/bootcs-cli:cs50 check cs5
 将以下内容添加到 `~/.zshrc` 或 `~/.bashrc`：
 
 ```bash
-alias bootcs='docker run --rm -v $(pwd):/workspace ghcr.io/bootcs-cn/bootcs-cli:cs50'
+alias bootcs='docker run --rm -v $(pwd):/workspace ghcr.io/bootcs-dev/bootcs-cli:cs50'
 ```
 
 然后使用：

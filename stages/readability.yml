@@ -22,6 +22,27 @@ languages:
       blocked:
         - "*.o"
         - "*.exe"
+  python:
+    starter_path: starters/python/readability
+    check_path: checks/python/readability
+    files:
+      required:
+        - readability.py
+      allowed:
+        - "*.py"
+      blocked:
+        - "__pycache__"
+        - "*.pyc"
+  java:
+    starter_path: starters/java/readability
+    check_path: checks/java/readability
+    files:
+      required:
+        - Readability.java
+      allowed:
+        - "*.java"
+      blocked:
+        - "*.class"
 
 evaluation:
   timeout: 60

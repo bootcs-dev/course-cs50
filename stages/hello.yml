@@ -22,6 +22,25 @@ languages:
       blocked:
         - "*.o"
         - "*.exe"
+  python:
+    starter: starters/python/hello
+    files:
+      required:
+        - hello.py
+      allowed:
+        - "*.py"
+      blocked:
+        - "__pycache__"
+        - "*.pyc"
+  java:
+    starter: starters/java/hello
+    files:
+      required:
+        - Hello.java
+      allowed:
+        - "*.java"
+      blocked:
+        - "*.class"
 
 # 评测配置
 evaluation:

@@ -8,14 +8,15 @@ description: README.md
 summary: |
   哈佛大学计算机科学入门课程，涵盖 C、Python、SQL 和 Web 开发。
 
-icon: https://cdn.bootcs.cn/icons/cs50.svg
+icon: https://cdn.bootcs.dev/icons/cs50.svg
 difficulty: medium
 status: beta
 
 # 支持的语言（有序，第一个是推荐语言）
 languages:
   - c
-  # - python  # 未来扩展
+  - python
+  - java
 
 # 评测配置
 evaluation:
@@ -29,6 +30,7 @@ access:
 tags:
   - c
   - python
+  - java
   - algorithms
   - data-structures
 

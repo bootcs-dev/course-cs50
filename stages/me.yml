@@ -22,6 +22,27 @@ languages:
       blocked:
         - "*.o"
         - "*.exe"
+  python:
+    starter_path: starters/python/me
+    check_path: checks/python/me
+    files:
+      required:
+        - hello.py
+      allowed:
+        - "*.py"
+      blocked:
+        - "__pycache__"
+        - "*.pyc"
+  java:
+    starter_path: starters/java/me
+    check_path: checks/java/me
+    files:
+      required:
+        - Hello.java
+      allowed:
+        - "*.java"
+      blocked:
+        - "*.class"
 
 evaluation:
   timeout: 60

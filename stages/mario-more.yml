@@ -22,6 +22,27 @@ languages:
       blocked:
         - "*.o"
         - "*.exe"
+  python:
+    starter_path: starters/python/mario-more
+    check_path: checks/python/mario-more
+    files:
+      required:
+        - mario.py
+      allowed:
+        - "*.py"
+      blocked:
+        - "__pycache__"
+        - "*.pyc"
+  java:
+    starter_path: starters/java/mario-more
+    check_path: checks/java/mario-more
+    files:
+      required:
+        - Mario.java
+      allowed:
+        - "*.java"
+      blocked:
+        - "*.class"
 
 evaluation:
   timeout: 60
