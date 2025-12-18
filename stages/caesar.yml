@@ -1,0 +1,52 @@
+# stages/caesar.yml
+version: "1.0"
+
+slug: caesar
+name: "Caesar"
+description: caesar.md
+summary: |
+  实现凯撒密码加密程序，使用命令行参数指定密钥。
+
+category: Week 2
+
+# 多语言配置
+languages:
+  c:
+    starter: starters/c/caesar
+    files:
+      required:
+        - caesar.c
+      allowed:
+        - "*.c"
+        - "*.h"
+      blocked:
+        - "*.o"
+        - "*.exe"
+  python:
+    starter: starters/python/caesar
+    files:
+      required:
+        - caesar.py
+      allowed:
+        - "*.py"
+      blocked:
+        - "__pycache__"
+        - "*.pyc"
+  java:
+    starter: starters/java/caesar
+    files:
+      required:
+        - Caesar.java
+      allowed:
+        - "*.java"
+      blocked:
+        - "*.class"
+
+# 评测配置
+evaluation:
+  timeout: 60
+
+hints:
+  - "记得验证命令行参数的数量和格式"
+  - "使用取模运算处理超过 26 的密钥"
+  - "只加密字母，保留其他字符不变"

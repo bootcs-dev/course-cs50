@@ -42,6 +42,7 @@ stage_order:
   - hello
   - mario-less
   - cash
+  - caesar
   - me
   - mario-more
   - credit
