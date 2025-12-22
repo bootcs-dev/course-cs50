@@ -4,6 +4,8 @@
 
 CS50 是哈佛大学的计算机科学入门课程，由 David J. Malan 教授主讲。这门课程涵盖了计算机科学的核心概念，适合零基础学员。
 
+> 本课程已在 BootCS 平台上线，支持在线编程和自动评测。
+
 ## 学习内容
 
 - **Week 1**: C 语言基础
@@ -56,6 +58,3 @@ alias bootcs='docker run --rm -v $(pwd):/workspace ghcr.io/bootcs-dev/bootcs-cli
 ```bash
 bootcs check cs50/credit
 ```
-
-
-
